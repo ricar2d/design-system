@@ -1,65 +1,120 @@
 # OneHQ Design System
 
-Design system documentation extracted from the official Figma libraries:
-**Pattern Library · Icons Library · Inputs & Controls Library**
+> **One source of truth** for every color, component, and pattern that makes OneHQ feel like OneHQ.
+
+This documentation is extracted directly from the official Figma libraries and token files. It is the canonical reference for designers and engineers building on the OneHQ platform.
 
 ---
 
-## What's here
+## What this is
 
-| Section | Description |
-|---|---|
-| [Foundations](foundations.md) | Visual language, design principles, overview |
-| [Colors](colors.md) | Full color token inventory |
-| [Typography](typography.md) | IBM Plex Sans usage and type scale |
-| [Spacing](spacing.md) | Spacing scale and measured values |
-| [Tokens](tokens.md) | Complete CSS token reference — copy-paste ready |
-| [Icon System](icons.md) | 350+ icons catalogued with sizes and naming rules |
-| [Basic Elements](components/basic-elements.md) | Buttons, Cards, Badges, Tables, Modals and more |
-| [Inputs & Controls](components/inputs-controls.md) | All 25 input and control components |
-| [Layout & Navigation](components/layout-navigation.md) | Dialog, Filters, Nav, Skeletons and more |
-| [Layout Patterns](patterns/layout-patterns.md) | Page-level layout compositions |
-| [CRM Patterns](patterns/crm-patterns.md) | OneHQ-specific CRM UI patterns |
-| [Audit](audit.md) | 34 issues found — 5 critical, 14 medium, 15 low |
+The OneHQ Design System is a multi-layer architecture:
+
+```
+Primitive Colors
+    ↓ aliased by
+Semantic Tokens  ·  Chart Colors
+    ↓ consumed by
+Components
+    ↓ assembled into
+Patterns
+```
+
+**Primitives** are the raw values — every color swatch in every ramp. Named by family and lightness step (`clr-royal/50`), not by intent.
+
+**Semantic tokens** map primitives to roles (`text/primary`, `status/error`, `surface/default`). This is the layer your component code should reference.
+
+**Components** are the UI building blocks — buttons, inputs, cards, tables, modals. Each component is documented with its anatomy, variants, states, and token dependencies.
+
+**Patterns** are compositions — how components combine into recurring page structures like master-detail layouts, CRM record views, and data table pages.
 
 ---
 
 ## Figma source libraries
 
-| Library | Link |
+| Library | Description |
 |---|---|
-| Pattern Library | [Open in Figma](https://www.figma.com/design/qKL6hhOFWMH30bcMxjngCU/-PD--Pattern-Library) |
-| Icons Library | [Open in Figma](https://www.figma.com/design/rezBIVAdkICAShyFzPMHT2/-PD--Icons-Library) |
-| Inputs & Controls | [Open in Figma](https://www.figma.com/design/7qCBGLBSUsnlNAJVl9Rz0b/-PD--Inputs---Controls-Library) |
+| [Pattern Library](https://www.figma.com/design/qKL6hhOFWMH30bcMxjngCU) | All components and layout patterns |
+| [Icons Library](https://www.figma.com/design/rezBIVAdkICAShyFzPMHT2) | 314 icons across 4 sizes |
+| [Inputs & Controls](https://www.figma.com/design/7qCBGLBSUsnlNAJVl9Rz0b) | All form and input components |
 
 ---
 
-## Key token quick-reference
+## Quick reference
 
+### Core interactive color
 ```css
-/* Primary */
---clr-royal-50:    #0073e5;   /* All interactive / brand */
+--action-brand-primary:       #0073E5;  /* clr-royal/50 */
+--action-brand-primary-hover: #0053B2;  /* clr-royal/40 */
+```
 
-/* Text */
---clr-neutral-40:  #334466;   /* Headings, primary text */
---clr-neutral-55:  #627494;   /* Subtitles, supporting text */
+### Text
+```css
+--text-primary:   #334466;  /* clr-neutral/40 — headings, labels */
+--text-secondary: #627494;  /* clr-neutral/55 — descriptions, captions */
+--text-disabled:  #8497B8;  /* clr-neutral/65 */
+```
 
-/* Semantic */
---clr-wine-50:     #dc3838;   /* Error / destructive */
---clr-gold-60:     #fdbe3f;   /* Warning */
+### Surfaces
+```css
+--surface-default:  #F2F6FC;  /* clr-neutral/95 — page background */
+--surface-subtle:   #F9FBFE;  /* clr-neutral/98 — card inner areas */
+--surface-elevated: #E1E8F5;  /* clr-neutral/90 */
+```
 
-/* Surfaces */
---clr-white:       #ffffff;   /* Cards */
---clr-surface-page:#f3f3f3;   /* Page background */
+### Status
+```css
+--status-error:   #DC3838;  /* clr-wine/50  */
+--status-success: #246B2D;  /* clr-pea/40   */
+--status-warning: #8F5A00;  /* clr-gold/20  */
+--status-info:    #007BA8;  /* clr-sky/40   */
+```
 
-/* Shadows */
---shadow-card:     0 4px 23px rgba(22,88,197,0.06);
---shadow-mid:      0 0 18px rgba(14,67,140,0.07);
-
-/* Font */
---font-family:     'IBM Plex Sans', sans-serif;
+### Typography
+```css
+font-family: 'IBM Plex Sans', sans-serif;
+font-weight: 400 | 500;  /* Regular | Medium */
 ```
 
 ---
 
-*Last updated: 2026-03-13*
+## What's in this documentation
+
+### Foundations
+| Page | Description |
+|---|---|
+| [Foundations](foundations.md) | Visual language and design principles |
+| [Primitive Colors](foundations/primitive-colors.md) | All 13 color families with full ramps |
+| [Semantic Colors](foundations/semantic-colors.md) | Purposeful token aliases — use these in code |
+| [Chart Colors](foundations/chart-colors.md) | 5 data visualization palettes |
+| [Typography](typography.md) | IBM Plex Sans usage, weights, scale |
+| [Spacing](spacing.md) | Spacing scale and values |
+| [Tokens](tokens.md) | All tokens in one CSS reference |
+
+### Icons
+[314 icons](icons.md) across 4 sizes — Feather base extended with OneHQ-specific additions.
+
+### Components
+46 individual component pages across three groups: Basic Elements (13), Inputs & Controls (25), Layout & Navigation (8).
+
+### Patterns
+17 pattern pages: Layout Patterns (7) and CRM Patterns (10).
+
+### Audit
+[34 documented issues](audit.md) — 5 critical, 14 medium, 15 low.
+
+---
+
+## Design principles
+
+**Clarity over decoration.** Every visual decision should aid comprehension. The neutral-dominant palette keeps UI recessive so content can breathe.
+
+**Systematic over ad-hoc.** Use tokens. A hex value typed directly into a component is a future inconsistency.
+
+**Predictable states.** Every interactive element needs a complete set: default, hover, active, focus, disabled.
+
+**Accessible by default.** Text contrast, focus indicators, and status colors are chosen to meet WCAG AA minimum.
+
+---
+
+*Last extracted: 2026-03-20*
