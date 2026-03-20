@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  .color-table { width: 100%; border-collapse: collapse; font-size: 14px; font-family: 'IBM Plex Mono', monospace; }
+  .color-table th { text-align: left; padding: 8px 12px; border-bottom: 2px solid #e1e8f5; color: #627494; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
+  .color-table td { padding: 6px 12px; border-bottom: 1px solid #f2f6fc; vertical-align: middle; }
+  .color-table tr:last-child td { border-bottom: none; }
+  .color-table tr:hover td { background: #f9fbfe; }
+  .swatch { display: inline-block; width: 28px; height: 28px; border-radius: 5px; border: 1px solid rgba(0,0,0,0.08); vertical-align: middle; flex-shrink: 0; }
+  .swatch-cell { display: flex; align-items: center; gap: 10px; }
+  .hex { font-family: 'IBM Plex Mono', 'Courier New', monospace; color: #334466; }
+  .token { font-family: 'IBM Plex Mono', 'Courier New', monospace; color: #0073e5; }
+  .note { color: #627494; font-size: 13px; }
+  .base-badge { display: inline-block; background: #0073e5; color: white; font-size: 10px; padding: 1px 5px; border-radius: 3px; margin-left: 6px; vertical-align: middle; font-weight: 500; letter-spacing: 0.03em; }
+  .section-title { font-size: 20px; font-weight: 600; color: #334466; margin: 32px 0 4px 0; }
+  .section-desc { color: #627494; margin: 0 0 12px 0; font-size: 14px; }
+  .palette-block { margin-bottom: 40px; }
+  .intro { color: #334466; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
+  .rule-box { background: #f2f6fc; border-left: 3px solid #0073e5; padding: 12px 16px; border-radius: 0 6px 6px 0; margin-bottom: 32px; font-size: 14px; color: #334466; }
+</style>
+</head><body>
+<p class="intro">Primitive colors are the raw, named values that form the foundation of the entire design system. Every semantic token, component color, and chart color is an alias pointing to one of these primitives.</p>
+<p class="intro"><strong>Source:</strong> <code>Primitive_colors.json</code> — Figma variable collection "Primitive Colors"</p>
+<p class="intro">Each family is numbered from <strong>10 (darkest)</strong> to <strong>95–98 (lightest)</strong>. The step marked <strong>(base)</strong> is the truest expression of that hue.</p>
+<div class="palette-block"><p class="section-title">Global</p><p class="section-desc">Pure white and black.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFFFFF"></span></div></td>
+          <td><span class="token">global/white</span></td>
+          <td><span class="hex">#FFFFFF</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#000000"></span></div></td>
+          <td><span class="token">global/black</span></td>
+          <td><span class="hex">#000000</span></td>
+          <td><span class="note"></span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Royal — Primary / Brand Blue</p><p class="section-desc">The primary interactive color. Used for buttons, links, active states, focus indicators, and brand elements.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#000919"></span></div></td>
+          <td><span class="token">clr-royal/10</span></td>
+          <td><span class="hex">#000919</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#001433"></span></div></td>
+          <td><span class="token">clr-royal/15</span></td>
+          <td><span class="hex">#001433</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#001F4C"></span></div></td>
+          <td><span class="token">clr-royal/20</span></td>
+          <td><span class="hex">#001F4C</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#002A66"></span></div></td>
+          <td><span class="token">clr-royal/25</span></td>
+          <td><span class="hex">#002A66</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#003780"></span></div></td>
+          <td><span class="token">clr-royal/30</span></td>
+          <td><span class="hex">#003780</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#004599"></span></div></td>
+          <td><span class="token">clr-royal/35</span></td>
+          <td><span class="hex">#004599</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0053B2"></span></div></td>
+          <td><span class="token">clr-royal/40</span></td>
+          <td><span class="hex">#0053B2</span></td>
+          <td><span class="note">Hover state for primary buttons</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0063CC"></span></div></td>
+          <td><span class="token">clr-royal/45</span></td>
+          <td><span class="hex">#0063CC</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0073E5"></span></div></td>
+          <td><span class="token">clr-royal/50</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#0073E5</span></td>
+          <td><span class="note">Primary interactive — CTA, links, active</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#1C84EB"></span></div></td>
+          <td><span class="token">clr-royal/55</span></td>
+          <td><span class="hex">#1C84EB</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#3392F0"></span></div></td>
+          <td><span class="token">clr-royal/60</span></td>
+          <td><span class="hex">#3392F0</span></td>
+          <td><span class="note">Chart color 1</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#4CA0F5"></span></div></td>
+          <td><span class="token">clr-royal/65</span></td>
+          <td><span class="hex">#4CA0F5</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#68B1FB"></span></div></td>
+          <td><span class="token">clr-royal/70</span></td>
+          <td><span class="hex">#68B1FB</span></td>
+          <td><span class="note">Chart color 2</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#80BFFF"></span></div></td>
+          <td><span class="token">clr-royal/75</span></td>
+          <td><span class="hex">#80BFFF</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#9CCEFF"></span></div></td>
+          <td><span class="token">clr-royal/80</span></td>
+          <td><span class="hex">#9CCEFF</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#B6DBFF"></span></div></td>
+          <td><span class="token">clr-royal/85</span></td>
+          <td><span class="hex">#B6DBFF</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#D2E9FF"></span></div></td>
+          <td><span class="token">clr-royal/90</span></td>
+          <td><span class="hex">#D2E9FF</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#EBF6FF"></span></div></td>
+          <td><span class="token">clr-royal/95</span></td>
+          <td><span class="hex">#EBF6FF</span></td>
+          <td><span class="note">Selected row backgrounds</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Neutral — Text / UI Structure</p><p class="section-desc">The workhorse family. Used for all text, borders, dividers, surface backgrounds, and disabled states.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#050C19"></span></div></td>
+          <td><span class="token">clr-neutral/10</span></td>
+          <td><span class="hex">#050C19</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0A1326"></span></div></td>
+          <td><span class="token">clr-neutral/15</span></td>
+          <td><span class="hex">#0A1326</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0F1B33"></span></div></td>
+          <td><span class="token">clr-neutral/20</span></td>
+          <td><span class="hex">#0F1B33</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#172540"></span></div></td>
+          <td><span class="token">clr-neutral/25</span></td>
+          <td><span class="hex">#172540</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#1F2E4C"></span></div></td>
+          <td><span class="token">clr-neutral/30</span></td>
+          <td><span class="hex">#1F2E4C</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#273859"></span></div></td>
+          <td><span class="token">clr-neutral/35</span></td>
+          <td><span class="hex">#273859</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#334466"></span></div></td>
+          <td><span class="token">clr-neutral/40</span></td>
+          <td><span class="hex">#334466</span></td>
+          <td><span class="note">Primary text — headings, labels</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#3F5173"></span></div></td>
+          <td><span class="token">clr-neutral/45</span></td>
+          <td><span class="hex">#3F5173</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#4E6185"></span></div></td>
+          <td><span class="token">clr-neutral/50</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#4E6185</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#627494"></span></div></td>
+          <td><span class="token">clr-neutral/55</span></td>
+          <td><span class="hex">#627494</span></td>
+          <td><span class="note">Secondary text — descriptions, captions</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#7486A6"></span></div></td>
+          <td><span class="token">clr-neutral/60</span></td>
+          <td><span class="hex">#7486A6</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8497B8"></span></div></td>
+          <td><span class="token">clr-neutral/65</span></td>
+          <td><span class="hex">#8497B8</span></td>
+          <td><span class="note">Disabled text + surfaces</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#97AAC7"></span></div></td>
+          <td><span class="token">clr-neutral/70</span></td>
+          <td><span class="hex">#97AAC7</span></td>
+          <td><span class="note">Focus ring</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#AEBED6"></span></div></td>
+          <td><span class="token">clr-neutral/75</span></td>
+          <td><span class="hex">#AEBED6</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#C5D2E5"></span></div></td>
+          <td><span class="token">clr-neutral/80</span></td>
+          <td><span class="hex">#C5D2E5</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#D3DCED"></span></div></td>
+          <td><span class="token">clr-neutral/85</span></td>
+          <td><span class="hex">#D3DCED</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#E1E8F5"></span></div></td>
+          <td><span class="token">clr-neutral/90</span></td>
+          <td><span class="hex">#E1E8F5</span></td>
+          <td><span class="note">Elevated surface</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F2F6FC"></span></div></td>
+          <td><span class="token">clr-neutral/95</span></td>
+          <td><span class="hex">#F2F6FC</span></td>
+          <td><span class="note">Default surface / page background</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F9FBFE"></span></div></td>
+          <td><span class="token">clr-neutral/98</span></td>
+          <td><span class="hex">#F9FBFE</span></td>
+          <td><span class="note">Subtle surface — card inner areas</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Wine — Destructive / Error</p><p class="section-desc">Used for error states, destructive actions, and delete confirmations.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#570000"></span></div></td>
+          <td><span class="token">clr-wine/10</span></td>
+          <td><span class="hex">#570000</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#7A0000"></span></div></td>
+          <td><span class="token">clr-wine/20</span></td>
+          <td><span class="hex">#7A0000</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#9B0808"></span></div></td>
+          <td><span class="token">clr-wine/30</span></td>
+          <td><span class="hex">#9B0808</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#BC1515"></span></div></td>
+          <td><span class="token">clr-wine/40</span></td>
+          <td><span class="hex">#BC1515</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#DC3838"></span></div></td>
+          <td><span class="token">clr-wine/50</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#DC3838</span></td>
+          <td><span class="note">Error, destructive actions</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#ED5E5E"></span></div></td>
+          <td><span class="token">clr-wine/60</span></td>
+          <td><span class="hex">#ED5E5E</span></td>
+          <td><span class="note">Chart color 15</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F48B8B"></span></div></td>
+          <td><span class="token">clr-wine/70</span></td>
+          <td><span class="hex">#F48B8B</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FBB6B6"></span></div></td>
+          <td><span class="token">clr-wine/80</span></td>
+          <td><span class="hex">#FBB6B6</span></td>
+          <td><span class="note">Chart color 16</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FDD8D8"></span></div></td>
+          <td><span class="token">clr-wine/90</span></td>
+          <td><span class="hex">#FDD8D8</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FDEEEE"></span></div></td>
+          <td><span class="token">clr-wine/95</span></td>
+          <td><span class="hex">#FDEEEE</span></td>
+          <td><span class="note">Error background</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Gold — Warning / Highlight</p><p class="section-desc">Used for warning states, badges, and highlights. The base sits at /20 for text contrast.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#664100"></span></div></td>
+          <td><span class="token">clr-gold/10</span></td>
+          <td><span class="hex">#664100</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8F5A00"></span></div></td>
+          <td><span class="token">clr-gold/20</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#8F5A00</span></td>
+          <td><span class="note">Warning text — semantic status/warning</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#B27100"></span></div></td>
+          <td><span class="token">clr-gold/30</span></td>
+          <td><span class="hex">#B27100</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#DB8F00"></span></div></td>
+          <td><span class="token">clr-gold/40</span></td>
+          <td><span class="hex">#DB8F00</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F4AB19"></span></div></td>
+          <td><span class="token">clr-gold/50</span></td>
+          <td><span class="hex">#F4AB19</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FDBE3F"></span></div></td>
+          <td><span class="token">clr-gold/60</span></td>
+          <td><span class="hex">#FDBE3F</span></td>
+          <td><span class="note">Warning fill — badges, highlights</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFD480"></span></div></td>
+          <td><span class="token">clr-gold/70</span></td>
+          <td><span class="hex">#FFD480</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFE1A6"></span></div></td>
+          <td><span class="token">clr-gold/80</span></td>
+          <td><span class="hex">#FFE1A6</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFEECC"></span></div></td>
+          <td><span class="token">clr-gold/90</span></td>
+          <td><span class="hex">#FFEECC</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFF8EB"></span></div></td>
+          <td><span class="token">clr-gold/95</span></td>
+          <td><span class="hex">#FFF8EB</span></td>
+          <td><span class="note">Warning background</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Pea — Success / Positive</p><p class="section-desc">Used for success states, task completion, and positive indicators.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#003304"></span></div></td>
+          <td><span class="token">clr-pea/10</span></td>
+          <td><span class="hex">#003304</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0A430F"></span></div></td>
+          <td><span class="token">clr-pea/20</span></td>
+          <td><span class="hex">#0A430F</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#165A22"></span></div></td>
+          <td><span class="token">clr-pea/30</span></td>
+          <td><span class="hex">#165A22</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#246B2D"></span></div></td>
+          <td><span class="token">clr-pea/40</span></td>
+          <td><span class="hex">#246B2D</span></td>
+          <td><span class="note">Success text — semantic status/success</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#31873C"></span></div></td>
+          <td><span class="token">clr-pea/50</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#31873C</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#46A452"></span></div></td>
+          <td><span class="token">clr-pea/60</span></td>
+          <td><span class="hex">#46A452</span></td>
+          <td><span class="note">Chart color 6</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#75C778"></span></div></td>
+          <td><span class="token">clr-pea/70</span></td>
+          <td><span class="hex">#75C778</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#ABE3AD"></span></div></td>
+          <td><span class="token">clr-pea/80</span></td>
+          <td><span class="hex">#ABE3AD</span></td>
+          <td><span class="note">Chart color 8</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#D8F7D7"></span></div></td>
+          <td><span class="token">clr-pea/90</span></td>
+          <td><span class="hex">#D8F7D7</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#EEFCED"></span></div></td>
+          <td><span class="token">clr-pea/95</span></td>
+          <td><span class="hex">#EEFCED</span></td>
+          <td><span class="note">Success background</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Sky — Info / Informational Blue</p><p class="section-desc">A cooler, cyan-leaning blue. Used for info states and chart data series.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#00334D"></span></div></td>
+          <td><span class="token">clr-sky/10</span></td>
+          <td><span class="hex">#00334D</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#004766"></span></div></td>
+          <td><span class="token">clr-sky/20</span></td>
+          <td><span class="hex">#004766</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#005B80"></span></div></td>
+          <td><span class="token">clr-sky/30</span></td>
+          <td><span class="hex">#005B80</span></td>
+          <td><span class="note">Info strong</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#007BA8"></span></div></td>
+          <td><span class="token">clr-sky/40</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#007BA8</span></td>
+          <td><span class="note">Info — semantic status/info</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0898CC"></span></div></td>
+          <td><span class="token">clr-sky/50</span></td>
+          <td><span class="hex">#0898CC</span></td>
+          <td><span class="note">Chart color 3</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#2DB7E0"></span></div></td>
+          <td><span class="token">clr-sky/60</span></td>
+          <td><span class="hex">#2DB7E0</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#5ECAEB"></span></div></td>
+          <td><span class="token">clr-sky/70</span></td>
+          <td><span class="hex">#5ECAEB</span></td>
+          <td><span class="note">Chart color 4</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#93DEF5"></span></div></td>
+          <td><span class="token">clr-sky/80</span></td>
+          <td><span class="hex">#93DEF5</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#C8EEFA"></span></div></td>
+          <td><span class="token">clr-sky/90</span></td>
+          <td><span class="hex">#C8EEFA</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#EBF8FC"></span></div></td>
+          <td><span class="token">clr-sky/95</span></td>
+          <td><span class="hex">#EBF8FC</span></td>
+          <td><span class="note"></span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Mint — Teal / Aqua Green</p><p class="section-desc">A teal-green. Used for chart data series and accent colors.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#00332A"></span></div></td>
+          <td><span class="token">clr-mint/10</span></td>
+          <td><span class="hex">#00332A</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0C4D40"></span></div></td>
+          <td><span class="token">clr-mint/20</span></td>
+          <td><span class="hex">#0C4D40</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#006B59"></span></div></td>
+          <td><span class="token">clr-mint/30</span></td>
+          <td><span class="hex">#006B59</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#00856E"></span></div></td>
+          <td><span class="token">clr-mint/40</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#00856E</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#00A385"></span></div></td>
+          <td><span class="token">clr-mint/50</span></td>
+          <td><span class="hex">#00A385</span></td>
+          <td><span class="note">Chart color 5</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#20C5A4"></span></div></td>
+          <td><span class="token">clr-mint/60</span></td>
+          <td><span class="hex">#20C5A4</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#5FD9C0"></span></div></td>
+          <td><span class="token">clr-mint/70</span></td>
+          <td><span class="hex">#5FD9C0</span></td>
+          <td><span class="note">Chart color 7</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8EE5D4"></span></div></td>
+          <td><span class="token">clr-mint/80</span></td>
+          <td><span class="hex">#8EE5D4</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#C2F2E9"></span></div></td>
+          <td><span class="token">clr-mint/90</span></td>
+          <td><span class="hex">#C2F2E9</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#E6FAF6"></span></div></td>
+          <td><span class="token">clr-mint/95</span></td>
+          <td><span class="hex">#E6FAF6</span></td>
+          <td><span class="note"></span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Ivy — Olive / Warm Green</p><p class="section-desc">A yellow-toned green. Used for chart data series.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#263803"></span></div></td>
+          <td><span class="token">clr-ivy/10</span></td>
+          <td><span class="hex">#263803</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#344D04"></span></div></td>
+          <td><span class="token">clr-ivy/20</span></td>
+          <td><span class="hex">#344D04</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#486608"></span></div></td>
+          <td><span class="token">clr-ivy/30</span></td>
+          <td><span class="hex">#486608</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#5D820D"></span></div></td>
+          <td><span class="token">clr-ivy/40</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#5D820D</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#759E28"></span></div></td>
+          <td><span class="token">clr-ivy/50</span></td>
+          <td><span class="hex">#759E28</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8EB846"></span></div></td>
+          <td><span class="token">clr-ivy/60</span></td>
+          <td><span class="hex">#8EB846</span></td>
+          <td><span class="note">Chart color 9</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#ABD169"></span></div></td>
+          <td><span class="token">clr-ivy/70</span></td>
+          <td><span class="hex">#ABD169</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#CBE899"></span></div></td>
+          <td><span class="token">clr-ivy/80</span></td>
+          <td><span class="hex">#CBE899</span></td>
+          <td><span class="note">Chart color 10</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#E7F5D0"></span></div></td>
+          <td><span class="token">clr-ivy/90</span></td>
+          <td><span class="hex">#E7F5D0</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F4FAEB"></span></div></td>
+          <td><span class="token">clr-ivy/95</span></td>
+          <td><span class="hex">#F4FAEB</span></td>
+          <td><span class="note"></span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Sun — Amber / Warm Orange</p><p class="section-desc">A warm amber. Used for chart data series.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#663000"></span></div></td>
+          <td><span class="token">clr-sun/10</span></td>
+          <td><span class="hex">#663000</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8D4301"></span></div></td>
+          <td><span class="token">clr-sun/20</span></td>
+          <td><span class="hex">#8D4301</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#B15401"></span></div></td>
+          <td><span class="token">clr-sun/30</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#B15401</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#D96908"></span></div></td>
+          <td><span class="token">clr-sun/40</span></td>
+          <td><span class="hex">#D96908</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#E58019"></span></div></td>
+          <td><span class="token">clr-sun/50</span></td>
+          <td><span class="hex">#E58019</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F09A42"></span></div></td>
+          <td><span class="token">clr-sun/60</span></td>
+          <td><span class="hex">#F09A42</span></td>
+          <td><span class="note">Chart color 13</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F6B36F"></span></div></td>
+          <td><span class="token">clr-sun/70</span></td>
+          <td><span class="hex">#F6B36F</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FACC9E"></span></div></td>
+          <td><span class="token">clr-sun/80</span></td>
+          <td><span class="hex">#FACC9E</span></td>
+          <td><span class="note">Chart color 14</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FEE6CD"></span></div></td>
+          <td><span class="token">clr-sun/90</span></td>
+          <td><span class="hex">#FEE6CD</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FEF4EA"></span></div></td>
+          <td><span class="token">clr-sun/95</span></td>
+          <td><span class="hex">#FEF4EA</span></td>
+          <td><span class="note"></span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Iris — Blue-Violet / Purple</p><p class="section-desc">A blue-leaning violet. Used for chart data series.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0F0133"></span></div></td>
+          <td><span class="token">clr-iris/10</span></td>
+          <td><span class="hex">#0F0133</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#331F66"></span></div></td>
+          <td><span class="token">clr-iris/20</span></td>
+          <td><span class="hex">#331F66</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#44278C"></span></div></td>
+          <td><span class="token">clr-iris/30</span></td>
+          <td><span class="hex">#44278C</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#5B34BF"></span></div></td>
+          <td><span class="token">clr-iris/40</span></td>
+          <td><span class="hex">#5B34BF</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#6F43DE"></span></div></td>
+          <td><span class="token">clr-iris/50</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#6F43DE</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#875FED"></span></div></td>
+          <td><span class="token">clr-iris/60</span></td>
+          <td><span class="hex">#875FED</span></td>
+          <td><span class="note">Chart color 21</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#A180F2"></span></div></td>
+          <td><span class="token">clr-iris/70</span></td>
+          <td><span class="hex">#A180F2</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#C0ABF5"></span></div></td>
+          <td><span class="token">clr-iris/80</span></td>
+          <td><span class="hex">#C0ABF5</span></td>
+          <td><span class="note">Chart color 22</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#E4DCFA"></span></div></td>
+          <td><span class="token">clr-iris/90</span></td>
+          <td><span class="hex">#E4DCFA</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F5F2FC"></span></div></td>
+          <td><span class="token">clr-iris/95</span></td>
+          <td><span class="hex">#F5F2FC</span></td>
+          <td><span class="note"></span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Plum — Red-Violet / Magenta</p><p class="section-desc">A red-leaning violet. Used for chart data series.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#3C0B3D"></span></div></td>
+          <td><span class="token">clr-plum/10</span></td>
+          <td><span class="hex">#3C0B3D</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#591C5C"></span></div></td>
+          <td><span class="token">clr-plum/20</span></td>
+          <td><span class="hex">#591C5C</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#762B7A"></span></div></td>
+          <td><span class="token">clr-plum/30</span></td>
+          <td><span class="hex">#762B7A</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8F3494"></span></div></td>
+          <td><span class="token">clr-plum/40</span></td>
+          <td><span class="hex">#8F3494</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#A83DAD"></span></div></td>
+          <td><span class="token">clr-plum/50</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#A83DAD</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#C75ECC"></span></div></td>
+          <td><span class="token">clr-plum/60</span></td>
+          <td><span class="hex">#C75ECC</span></td>
+          <td><span class="note">Chart color 19</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#D784DB"></span></div></td>
+          <td><span class="token">clr-plum/70</span></td>
+          <td><span class="hex">#D784DB</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F1B0F5"></span></div></td>
+          <td><span class="token">clr-plum/80</span></td>
+          <td><span class="hex">#F1B0F5</span></td>
+          <td><span class="note">Chart color 20</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F8D4FA"></span></div></td>
+          <td><span class="token">clr-plum/90</span></td>
+          <td><span class="hex">#F8D4FA</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FCF2FC"></span></div></td>
+          <td><span class="token">clr-plum/95</span></td>
+          <td><span class="hex">#FCF2FC</span></td>
+          <td><span class="note"></span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Ruby — Hot Pink / Cerise</p><p class="section-desc">A warm pink-red. Used for chart data series.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Notes</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#5E0228"></span></div></td>
+          <td><span class="token">crl-ruby/10</span></td>
+          <td><span class="hex">#5E0228</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#800035"></span></div></td>
+          <td><span class="token">crl-ruby/20</span></td>
+          <td><span class="hex">#800035</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#9E003F"></span></div></td>
+          <td><span class="token">crl-ruby/30</span></td>
+          <td><span class="hex">#9E003F</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#C40A4E"></span></div></td>
+          <td><span class="token">crl-ruby/40</span></td>
+          <td><span class="hex">#C40A4E</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#DE2C64"></span></div></td>
+          <td><span class="token">crl-ruby/50</span><span class="base-badge">base</span></td>
+          <td><span class="hex">#DE2C64</span></td>
+          <td><span class="note">Chart color 12</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FA5F90"></span></div></td>
+          <td><span class="token">crl-ruby/60</span></td>
+          <td><span class="hex">#FA5F90</span></td>
+          <td><span class="note">Chart color 18</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FF8CB3"></span></div></td>
+          <td><span class="token">crl-ruby/70</span></td>
+          <td><span class="hex">#FF8CB3</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFB2CF"></span></div></td>
+          <td><span class="token">crl-ruby/80</span></td>
+          <td><span class="hex">#FFB2CF</span></td>
+          <td><span class="note">Chart color 17</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFD9E9"></span></div></td>
+          <td><span class="token">crl-ruby/90</span></td>
+          <td><span class="hex">#FFD9E9</span></td>
+          <td><span class="note"></span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFF2F8"></span></div></td>
+          <td><span class="token">crl-ruby/95</span></td>
+          <td><span class="hex">#FFF2F8</span></td>
+          <td><span class="note"></span></td>
+        </tr></tbody></table></div></body></html>

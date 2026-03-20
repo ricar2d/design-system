@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  .color-table { width: 100%; border-collapse: collapse; font-size: 14px; font-family: 'IBM Plex Mono', monospace; }
+  .color-table th { text-align: left; padding: 8px 12px; border-bottom: 2px solid #e1e8f5; color: #627494; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
+  .color-table td { padding: 6px 12px; border-bottom: 1px solid #f2f6fc; vertical-align: middle; }
+  .color-table tr:last-child td { border-bottom: none; }
+  .color-table tr:hover td { background: #f9fbfe; }
+  .swatch { display: inline-block; width: 28px; height: 28px; border-radius: 5px; border: 1px solid rgba(0,0,0,0.08); vertical-align: middle; flex-shrink: 0; }
+  .swatch-cell { display: flex; align-items: center; gap: 10px; }
+  .hex { font-family: 'IBM Plex Mono', 'Courier New', monospace; color: #334466; }
+  .token { font-family: 'IBM Plex Mono', 'Courier New', monospace; color: #0073e5; }
+  .note { color: #627494; font-size: 13px; }
+  .base-badge { display: inline-block; background: #0073e5; color: white; font-size: 10px; padding: 1px 5px; border-radius: 3px; margin-left: 6px; vertical-align: middle; font-weight: 500; letter-spacing: 0.03em; }
+  .section-title { font-size: 20px; font-weight: 600; color: #334466; margin: 32px 0 4px 0; }
+  .section-desc { color: #627494; margin: 0 0 12px 0; font-size: 14px; }
+  .palette-block { margin-bottom: 40px; }
+  .intro { color: #334466; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
+  .rule-box { background: #f2f6fc; border-left: 3px solid #0073e5; padding: 12px 16px; border-radius: 0 6px 6px 0; margin-bottom: 32px; font-size: 14px; color: #334466; }
+</style>
+</head><body>
+<p class="intro">Semantic tokens are named by <strong>purpose</strong>, not visual appearance. They are aliases pointing to specific primitive color steps.</p>
+<div class="rule-box">Always use semantic tokens in component code — never reference primitives directly.<br><br>
+<code style="color:#0073e5">color: var(--text-primary)</code> &nbsp;✅<br>
+<code style="color:#627494">color: var(--clr-neutral-40)</code> &nbsp;❌</div>
+<div class="palette-block"><p class="section-title">Action / Brand</p><p class="section-desc">Interactive elements — buttons, links, active indicators.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Primitive alias</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0073E5"></span></div></td>
+          <td><span class="token">action-brand/primary</span></td>
+          <td><span class="hex">#0073E5</span></td>
+          <td><span class="note">clr-royal/50 (base)</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0053B2"></span></div></td>
+          <td><span class="token">action-brand/primary-hover</span></td>
+          <td><span class="hex">#0053B2</span></td>
+          <td><span class="note">clr-royal/40</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0073E5"></span></div></td>
+          <td><span class="token">action-brand/primary-text</span></td>
+          <td><span class="hex">#0073E5</span></td>
+          <td><span class="note">clr-royal/50 (base)</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#0073E5"></span></div></td>
+          <td><span class="token">action-brand/primary-border</span></td>
+          <td><span class="hex">#0073E5</span></td>
+          <td><span class="note">clr-royal/50 (base)</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Surface</p><p class="section-desc">Background layers and container fills.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Primitive alias</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F2F6FC"></span></div></td>
+          <td><span class="token">surface/default</span></td>
+          <td><span class="hex">#F2F6FC</span></td>
+          <td><span class="note">clr-neutral/95</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#F9FBFE"></span></div></td>
+          <td><span class="token">surface/subtle</span></td>
+          <td><span class="hex">#F9FBFE</span></td>
+          <td><span class="note">clr-neutral/98</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#E1E8F5"></span></div></td>
+          <td><span class="token">surface/elevated</span></td>
+          <td><span class="hex">#E1E8F5</span></td>
+          <td><span class="note">clr-neutral/90</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8497B8"></span></div></td>
+          <td><span class="token">surface/disabled</span></td>
+          <td><span class="hex">#8497B8</span></td>
+          <td><span class="note">clr-neutral/65</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Text</p><p class="section-desc">All text across the product.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Primitive alias</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#334466"></span></div></td>
+          <td><span class="token">text/primary</span></td>
+          <td><span class="hex">#334466</span></td>
+          <td><span class="note">clr-neutral/40</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#627494"></span></div></td>
+          <td><span class="token">text/secondary</span></td>
+          <td><span class="hex">#627494</span></td>
+          <td><span class="note">clr-neutral/55</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8497B8"></span></div></td>
+          <td><span class="token">text/disabled</span></td>
+          <td><span class="hex">#8497B8</span></td>
+          <td><span class="note">clr-neutral/65</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Status</p><p class="section-desc">Feedback and notification states.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Primitive alias</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#DC3838"></span></div></td>
+          <td><span class="token">status/error</span></td>
+          <td><span class="hex">#DC3838</span></td>
+          <td><span class="note">clr-wine/50 (base)</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FDEEEE"></span></div></td>
+          <td><span class="token">status/error-bg</span></td>
+          <td><span class="hex">#FDEEEE</span></td>
+          <td><span class="note">clr-wine/95</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#DC3838"></span></div></td>
+          <td><span class="token">status/error-border</span></td>
+          <td><span class="hex">#DC3838</span></td>
+          <td><span class="note">clr-wine/50 (base)</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#246B2D"></span></div></td>
+          <td><span class="token">status/success</span></td>
+          <td><span class="hex">#246B2D</span></td>
+          <td><span class="note">clr-pea/40</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#EEFCED"></span></div></td>
+          <td><span class="token">status/success-bg</span></td>
+          <td><span class="hex">#EEFCED</span></td>
+          <td><span class="note">clr-pea/95</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#8F5A00"></span></div></td>
+          <td><span class="token">status/warning</span></td>
+          <td><span class="hex">#8F5A00</span></td>
+          <td><span class="note">clr-gold/20 (base)</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#FFF8EB"></span></div></td>
+          <td><span class="token">status/warning-bg</span></td>
+          <td><span class="hex">#FFF8EB</span></td>
+          <td><span class="note">clr-gold/95</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#007BA8"></span></div></td>
+          <td><span class="token">status/info</span></td>
+          <td><span class="hex">#007BA8</span></td>
+          <td><span class="note">clr-sky/40 (base)</span></td>
+        </tr><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#005B80"></span></div></td>
+          <td><span class="token">status/info-strong</span></td>
+          <td><span class="hex">#005B80</span></td>
+          <td><span class="note">clr-sky/30</span></td>
+        </tr></tbody></table></div><div class="palette-block"><p class="section-title">Focus</p><p class="section-desc">Keyboard navigation and accessibility.</p><table class="color-table"><thead><tr><th>Swatch</th><th>Token</th><th>Hex</th><th>Primitive alias</th></tr></thead><tbody><tr>
+          <td><div class="swatch-cell"><span class="swatch" style="background:#97AAC7"></span></div></td>
+          <td><span class="token">focus/ring</span></td>
+          <td><span class="hex">#97AAC7</span></td>
+          <td><span class="note">clr-neutral/70</span></td>
+        </tr></tbody></table></div></body></html>

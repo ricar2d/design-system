@@ -7,9 +7,9 @@
 ## Foundations
 
 * [Overview](foundations.md)
-* [Primitive Colors](foundations/primitive-colors.md)
-* [Semantic Colors](foundations/semantic-colors.md)
-* [Chart Colors](foundations/chart-colors.md)
+* [Primitive Colors](foundations/primitive-colors.html)
+* [Semantic Colors](foundations/semantic-colors.html)
+* [Chart Colors](foundations/chart-colors.html)
 * [Typography](typography.md)
 * [Spacing](spacing.md)
 * [Tokens](tokens.md)
