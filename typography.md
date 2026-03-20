@@ -24,15 +24,12 @@ IBM Plex Sans is IBM's open-source humanist sans-serif. It carries a structured,
 | Bold | 700 | *(inferred — Bold icon present in icon set)* |
 
 > ✅ **Found in library:** Regular and Medium are used throughout all components.
-> ⚠️ **Inferred pattern:** Bold (700) is present in the icon library (`Icon=bold`, `Icon=italic`, `Icon=underline`) indicating rich-text editor support, but Bold weight is not found in system-level components.
 
 ---
 
 ## Type Scale (Inferred — not formally defined in libraries)
 
 The following scale is measured from Figma frame dimensions and relative sizing within components. Values are in the Figma canvas coordinate system (at approximately 2× scale from actual px).
-
-> ⚠️ **Important note:** The Figma files appear to use a high-DPI canvas (components are laid out at ~2× screen scale). The text sizes below reflect raw Figma values. Actual rendered sizes should be divided by approximately 2 for standard screen implementation.
 
 | Role | Figma value | Estimated screen px | Weight | Token (recommended) |
 |---|---|---|---|---|
@@ -43,8 +40,6 @@ The following scale is measured from Figma frame dimensions and relative sizing 
 | Icon label text | 64–80px | ~14px | Regular | `text-label` |
 | Header text (Icon lib) | 112px | ~20px | Regular | `text-header` |
 
-> ⚠️ **Missing / recommended addition:** No formal type scale with named tokens exists in any library. The system needs a documented scale for consistent implementation. The above is derived from measured values and should be verified against the running application.
-
 ---
 
 ## Line Height
@@ -54,8 +49,6 @@ The following scale is measured from Figma frame dimensions and relative sizing 
 | Default block text | `leading-[normal]` | Browser default (~1.2–1.4) |
 | Icon library description | `leading-[95px]` | Large canvas scale |
 | Component labels | `leading-[0]` with nested `leading-[normal]` | Collapsed container with internal reset |
-
-> ⚠️ **Inconsistency:** Line height is inconsistently applied. Some elements use `leading-[normal]`, others use explicit pixel values. A semantic set of `line-height` tokens would improve consistency.
 
 ---
 

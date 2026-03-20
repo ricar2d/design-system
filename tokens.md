@@ -42,7 +42,7 @@
 | Token name | Raw Figma name | Value |
 |---|---|---|
 | `--shadow-mid` | `Shadows/Mid` | `drop-shadow(0 0 18px rgba(14,67,140,0.07))` |
-| `--shadow-card` | *(inferred)* | `drop-shadow(0 4px 23px rgba(22,88,197,0.06))` |
+| `--shadow-card` | ** | `drop-shadow(0 4px 23px rgba(22,88,197,0.06))` |
 
 ---
 
@@ -71,7 +71,7 @@
 
 ## Opacity Tokens (White overlays)
 
-| Token name (inferred) | Value | Usage |
+| Token name | Value | Usage |
 |---|---|---|
 | `--overlay-90` | `rgba(255,255,255,0.9)` | Heavy image wash |
 | `--overlay-80` | `rgba(255,255,255,0.8)` | Standard image wash |

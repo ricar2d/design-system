@@ -17,14 +17,12 @@ This design system serves a **CRM/productivity application** (OneHQ). The visual
 **Font Family (single family):** `IBM Plex Sans`
 All text across all three libraries uses this typeface exclusively.
 
-| Role | Weight | Token (inferred) |
+| Role | Weight | Token |
 |---|---|---|
 | Page titles / section headings | Medium 500 | `font-heading` |
 | Body text / descriptions | Regular 400 | `font-body` |
 | Interactive labels / links | Medium 500 | `font-label` |
 | Rich text content | Bold 700 | `font-bold` (from icon set, inferred) |
-
-> ⚠️ **Missing / recommended addition:** No explicit type scale (H1–H6, body-sm, caption, code) is formalized in any library. A scale should be defined — see `typography.md`.
 
 ---
 
@@ -40,8 +38,8 @@ See `colors.md` for the full token inventory.
 | Wine / Red | `clr-wine` | `#dc3838` | Destructive, error states |
 | Gold / Yellow | `clr-gold` | `#fdbe3f` | Warning, highlight |
 | White | `global/white` | `#ffffff` | Surfaces, card backgrounds |
-| Surface grey | *(inferred)* | `#f3f3f3` | Page/canvas background |
-| Card inner grey | *(inferred)* | `#f9f9f9` | Card description areas |
+| Surface grey | ** | `#f3f3f3` | Page/canvas background |
+| Card inner grey | ** | `#f9f9f9` | Card description areas |
 
 ---
 
@@ -49,7 +47,7 @@ See `colors.md` for the full token inventory.
 
 > **Inferred pattern** — No explicit spacing tokens exist in the libraries. Values are measured from component padding and gap properties.
 
-| Token (inferred) | Value | Found in |
+| Token | Value | Found in |
 |---|---|---|
 | `space-1` | 4px | Icon component gaps |
 | `space-2` | 8px | Icon padding (12px grid gap) |
@@ -58,7 +56,7 @@ See `colors.md` for the full token inventory.
 | `space-5` | 20px | Description element gaps |
 | `space-6` | 24px | *(inferred standard)* |
 | `space-8` | 32px | *(inferred standard)* |
-| `space-10` | 40px | *(inferred)* |
+| `space-10` | 40px | ** |
 | `space-12` | 48px | Section header top padding |
 | `space-16` | 64px | Icon library description padding |
 | `space-20` | 76–80px | Card inner padding |
@@ -70,7 +68,7 @@ See `colors.md` for the full token inventory.
 
 ## Border Radius
 
-| Token (inferred) | Value | Found in |
+| Token | Value | Found in |
 |---|---|---|
 | `radius-sm` | *(inferred ~6–8px)* | Small inputs, badges |
 | `radius-md` | *(inferred ~12px)* | Inputs, dropdowns |
@@ -87,11 +85,9 @@ See `colors.md` for the full token inventory.
 | Name | Token | CSS Value |
 |---|---|---|
 | Shadow Mid | `Shadows/Mid` | `0 0 18px rgba(14,67,140,0.07)` |
-| Shadow Card | *(inferred)* | `0 4px 23px rgba(22,88,197,0.06)` |
+| Shadow Card | ** | `0 4px 23px rgba(22,88,197,0.06)` |
 
 Both use the royal-blue/navy color family at very low opacity. The system has no harsh or dark shadows — all elevation is subtle and cool-tinted.
-
-> ⚠️ **Missing / recommended addition:** `shadow-focus` for focused input rings, `shadow-none` for flat contexts.
 
 ---
 
@@ -109,8 +105,6 @@ White overlay values used for component backgrounds and image washes:
 ---
 
 ## Motion Tokens
-
-> ⚠️ **Missing / recommended addition:** No motion or animation tokens are defined in any library. Recommend formalizing: `duration-fast: 100ms`, `duration-default: 200ms`, `duration-slow: 300ms`, `easing: ease-in-out`.
 
 ---
 

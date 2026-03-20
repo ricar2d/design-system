@@ -2,8 +2,6 @@
 
 **Source:** Inferred from all three libraries — no explicit spacing tokens are defined.
 
-> ⚠️ **Missing / recommended addition:** The libraries do not contain a formal spacing token system. All values below are measured from component padding, gap, and margin properties found in the Figma source. A formal token set should be adopted to eliminate the inconsistencies noted below.
-
 ---
 
 ## Measured Spacing Values
@@ -18,7 +16,7 @@
 | 16px | *(standard inferred)* | `space-4` |
 | 20px | Card description element gap | `space-5` |
 | 24px | *(standard inferred)* | `space-6` |
-| 36px | *(inferred)* | `space-9` |
+| 36px | ** | `space-9` |
 
 ### Component padding
 
